@@ -1,0 +1,173 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none; }
+
+/*Estos son los colores del hostal, en variables para llamarse en forma rápida*/
+body {
+  font-family: 'Montserrat', 'sans-serif';
+  overflow-x: hidden; }
+
+/*Menú en formato desktop*/
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100vw;
+  height: 8vh; }
+  header .header__logo {
+    position: relative;
+    flex: 1;
+    flex-wrap: none;
+    color: white;
+    padding: 25px;
+    z-index: 999; }
+  header .header__navbar {
+    position: relative;
+    padding-top: 8px;
+    padding-bottom: 20px;
+    z-index: 999;
+    background: none;
+    border: 0;
+    border-radius: 0;
+    text-align: center; }
+  header .header__navbar ul {
+    display: flex;
+    flex: 2;
+    flex-direction: row;
+    align-items: space-evenly;
+    font-size: 18px;
+    padding-right: 40px; }
+  header .header__navbar ul li {
+    color: white;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    padding: 20px; }
+  header .header__navbar a {
+    text-decoration: none;
+    height: 100%;
+    color: white;
+    font-weight: 600; }
+  header .header__navbar a:hover {
+    height: 100%;
+    color: black;
+    background-color: white; }
+
+@media only screen and (min-width: 768px) {
+  .header__logo {
+    flex: 1; }
+  .header__navbar ul {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: right; } }
+
+#carruselArica {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 5vh; }
+
+/*Esta sección le da estilo a la página Nosotros*/
+.main__nosotros__body {
+  background-image: linear-gradient(#11224f, #1A3B71);
+  color: white;
+  overflow-x: hidden; }
+
+#main__nosotros {
+  padding: 7vh 20vw 2vh 20vw;
+  display: grid;
+  grid-template-columns: 2fr 2fr 3fr;
+  grid-template-rows: 0.5fr 0.5fr 2fr 2fr;
+  column-gap: 30px;
+  row-gap: 10px;
+  justify-self: center;
+  grid-template-areas: "tituloNosotros tituloNosotros tituloNosotros" "subtituloNosotros subtituloNosotros subtituloNosotros" "img1 img2 textoNosotros" "img3 img4 textoNosotros"; }
+  #main__nosotros .tituloSunny {
+    grid-area: tituloNosotros; }
+  #main__nosotros .subtituloSunny {
+    grid-area: subtituloNosotros; }
+  #main__nosotros .imgUno {
+    grid-area: img1;
+    background-image: url("../archivos/nosotros-4.jpg");
+    background-size: contain;
+    background-repeat: no-repeat; }
+  #main__nosotros .imgDos {
+    grid-area: img2;
+    background-image: url("../archivos/nosotros-5.jpg");
+    background-size: contain;
+    background-repeat: no-repeat; }
+  #main__nosotros .imgTres {
+    grid-area: img3;
+    background-image: url("../archivos/nosotros-6.jpg");
+    background-size: contain;
+    background-repeat: no-repeat; }
+  #main__nosotros .imgCuatro {
+    grid-area: img4;
+    background-image: url("../archivos/nosotros-7.jpg");
+    background-size: contain;
+    background-repeat: no-repeat; }
+  #main__nosotros .textoNosotros {
+    font-size: 15px;
+    font-weight: 400;
+    grid-area: textoNosotros;
+    text-align: justify; }
+
+#main__servicios {
+  display: flex;
+  flex-direction: column;
+  margin: 15vh 15vw 5vh 15vw;
+  padding-bottom: 40vh; }
+  #main__servicios .main__servicios_modifier {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    padding-top: 7vh; }
+    #main__servicios .main__servicios_modifier div {
+      background-color: #11224f;
+      width: 300px;
+      height: 270px;
+      color: white;
+      text-align: left;
+      margin: 0px 2px 0px 5px; }
+      #main__servicios .main__servicios_modifier div p {
+        font-size: 14px;
+        padding: 20px; }
+
+/*Estos son los estilos para la página Experiencias*/
+#main__experiencias {
+  display: flex;
+  flex-direction: column;
+  justify-self: center; }
+  #main__experiencias h1 {
+    font-size: 25px;
+    font-weight: 400;
+    margin: 3vh 12vw 3vh 12vw; }
+  #main__experiencias .main__experiencias__modifier {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 10vw 0px 10vw; }
+    #main__experiencias .main__experiencias__modifier .cardExperience {
+      display: flex;
+      flex-direction: column;
+      padding: 2vw;
+      width: 80vw;
+      height: auto; }
+      #main__experiencias .main__experiencias__modifier .cardExperience .imgYfoto {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center; }
+        #main__experiencias .main__experiencias__modifier .cardExperience .imgYfoto img {
+          height: 6vh;
+          padding: 0.5vh; }
+        #main__experiencias .main__experiencias__modifier .cardExperience .imgYfoto p {
+          font-size: 16px;
+          text-align: justify;
+          padding: 1em; }
+      #main__experiencias .main__experiencias__modifier .cardExperience p {
+        font-size: 14px; }
