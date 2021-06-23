@@ -32,6 +32,42 @@
                 </ul>
             </nav>
         </header>
+        <section id="main__rooms">
+            <div class="main__rooms__modifier">
+                <h1 class="tituloRooms">Una Gran Variedad de Habitaciones</h1>
+                <h2 class="subtituloRooms">Con baño compartido, baño privado y habitaciones grupales</h2>
+            </div>
+            <div class="main__rooms__info">
+                <div class="priceInfo"><p>Precios desde<br><span style="font-size: x-large; 
+                font-weight: bold;">CLP 28.000</span></p></div>
+                <div class="imgRooms1"></div>
+                <div class="imgRooms2"></div>
+                <div class="imgRooms3"></div>
+                <div class="imgRooms4"></div>
+            </div>
+        </section>
+        <section id="formRooms">
+            <p>¿Planeas visitar Arica?</p>
+            <p>¡Envíanos un mensaje para planificar tu estadía!</p>
+            <form action="/action_page.php">
+                <label for="nombrePila">Nombre</label>
+                <input type="text" class="insertarText" name="nombreConsulta" placeholder="Tu Nombre">       
+                <label for="apellido">Apellido</label>
+                <input type="text" class="insertarText" name="apellidoConsulta" placeholder="Tu Apellido">         
+                <label for="pais">País</label>
+                <select class="insertarText" name="paisDeConsulta">
+                <option value="argentina" selected>Argentina</option>
+                <option value="chile">Chile</option>
+                <option value="colombia">Colombia</option>
+                <option value="estates">EE.UU</option>
+                <option value="alemania">Alemania</option>
+                </select>
+                <label for="inputForm">Envíanos tu consulta</label>
+                <textarea class="insertarText" type="text" placeholder="Escribe tu mensaje"></textarea>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </form>
+        </section>
         <footer id="footer__general">
             <div>
                 <ul>
