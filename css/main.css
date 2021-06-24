@@ -86,10 +86,7 @@ header {
   column-gap: 30px;
   row-gap: 10px;
   justify-self: center;
-  grid-template-areas: "tituloNosotros tituloNosotros tituloNosotros"
- "subtituloNosotros subtituloNosotros subtituloNosotros"
- "img1 img2 textoNosotros"
- "img3 img4 textoNosotros"; }
+  grid-template-areas: "tituloNosotros tituloNosotros tituloNosotros" "subtituloNosotros subtituloNosotros subtituloNosotros" "img1 img2 textoNosotros" "img3 img4 textoNosotros"; }
   #main__nosotros .tituloSunny {
     grid-area: tituloNosotros; }
   #main__nosotros .subtituloSunny {
@@ -183,25 +180,33 @@ header {
   #main__acercaArica #main__acercaArica__info {
     display: flex;
     flex-direction: column; }
-    #main__acercaArica #main__acercaArica__info .main__acercaArica__modifier a:link {
-      text-align: center;
-      text-decoration: none !important;
-      color: black; }
+    #main__acercaArica #main__acercaArica__info .main__acercaArica__modifier {
+      padding-bottom: 10vh; }
+      #main__acercaArica #main__acercaArica__info .main__acercaArica__modifier a:link {
+        text-align: center;
+        text-decoration: none !important;
+        color: black; }
     #main__acercaArica #main__acercaArica__info .main__acercaArica__info__modifier {
       display: flex;
       flex-direction: row;
       align-items: center;
-      font-size: 0.9em; }
+      font-size: 0.9em;
+      padding-top: 9vh; }
       #main__acercaArica #main__acercaArica__info .main__acercaArica__info__modifier img {
-        width: 25vw; }
+        width: 25vw;
+        padding: 0px 2vw 0px 2vw; }
       #main__acercaArica #main__acercaArica__info .main__acercaArica__info__modifier p {
         text-align: justify; }
   #main__acercaArica #infoArica2 {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    padding-top: 20vh;
+    padding-bottom: 40vh; }
+    #main__acercaArica #infoArica2 h3 {
+      padding: 0vh 0vw 2vh 0vw; }
     #main__acercaArica #infoArica2 .imgsArica {
       display: flex;
-      flex-direction: row;
-      padding: 0px 1vw 0px 1vw; }
+      flex-direction: row; }
       #main__acercaArica #infoArica2 .imgsArica img {
-        width: 10vw; }
+        width: 15vw;
+        padding: 15vh 0.5vw 15px 0.5vw; }

@@ -25,3 +25,22 @@ window.sr = ScrollReveal();
         origin: 'top',
         distance: '-100px'
     });
+
+/*Scroll Reveall aplicado a la información de la página Acerca de Arica*/
+    sr.reveal('.main__acercaArica__modifier',{
+        duration:  1500,
+        origin: 'bottom',
+        distance: '-100px'
+    });
+
+    sr.reveal('.main__acercaArica__info__modifier',{
+        duration:  1500,
+        origin: 'right',
+        distance: '700px'
+    });
+
+    sr.reveal('#infoArica2',{
+        duration:  2700,
+        origin: 'right',
+        distance: '700px'
+    })
