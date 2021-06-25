@@ -171,3 +171,42 @@ header {
           padding: 1em; }
       #main__experiencias .main__experiencias__modifier .cardExperience p {
         font-size: 14px; }
+
+/*Los estilos siguientes corresponden a la página Acerca Arica*/
+#main__acercaArica {
+  display: flex;
+  flex-direction: column;
+  padding: 7vh 10vw 2vh 10vw; }
+  #main__acercaArica #main__acercaArica__info {
+    display: flex;
+    flex-direction: column; }
+    #main__acercaArica #main__acercaArica__info .main__acercaArica__modifier {
+      padding-bottom: 10vh; }
+      #main__acercaArica #main__acercaArica__info .main__acercaArica__modifier a:link {
+        text-align: center;
+        text-decoration: none !important;
+        color: black; }
+    #main__acercaArica #main__acercaArica__info .main__acercaArica__info__modifier {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: 0.9em;
+      padding-top: 9vh; }
+      #main__acercaArica #main__acercaArica__info .main__acercaArica__info__modifier img {
+        width: 25vw;
+        padding: 0px 2vw 0px 2vw; }
+      #main__acercaArica #main__acercaArica__info .main__acercaArica__info__modifier p {
+        text-align: justify; }
+  #main__acercaArica #infoArica2 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20vh;
+    padding-bottom: 40vh; }
+    #main__acercaArica #infoArica2 h3 {
+      padding: 0vh 0vw 2vh 0vw; }
+    #main__acercaArica #infoArica2 .imgsArica {
+      display: flex;
+      flex-direction: row; }
+      #main__acercaArica #infoArica2 .imgsArica img {
+        width: 15vw;
+        padding: 15vh 0.5vw 15px 0.5vw; }
