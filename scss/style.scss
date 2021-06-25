@@ -300,38 +300,5 @@ header{
     }
 }
 
-/*Estilos página habitaciones*/
-
-#main__rooms{
-    padding: 100vh 20vw 2vh 20vw;
-}
-
-.main__rooms__BP{
-    padding: 100vh 20vw 2vh 20vw;
-    display: flex;
-    flex-direction: row;
-
-    .card{
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        width: 40vw;
-        height: auto;
-        padding: 20px;
-        margin: 10px;
-        background-image: $fondo-dos;
-        border-radius: 20px;
-        color: white;
-    
-        img{
-            height: 200px;
-            width: 200px;
-            border-radius: 20px;
-            padding: 10px;
-        }
-
-        .card-text{
-            font-size: 16px;
-        }
-    }
-}
+/*A partir de los estilos de Habitaciones se codea directamente en el CSS, por causa de un error que no
+pude resolver*/

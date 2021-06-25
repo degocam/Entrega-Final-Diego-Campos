@@ -210,3 +210,6 @@ header {
       #main__acercaArica #infoArica2 .imgsArica img {
         width: 15vw;
         padding: 15vh 0.5vw 15px 0.5vw; }
+
+/*A partir de los estilos de Habitaciones se codea directamente en el CSS, por causa de un error que no
+pude resolver*/
