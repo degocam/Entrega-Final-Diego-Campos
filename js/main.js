@@ -57,6 +57,25 @@ window.sr = ScrollReveal();
         distance: '-100px'
     });
 
+/*Scroll Reveal de la página Acerca de Arica*/
+    sr.reveal('#main__acercaArica',{
+        duration:  1500,
+        origin: 'left',
+        distance: '700px'
+    });
+
+    sr.reveal('.main__acercaArica__info__modifier',{
+        duration:  1500,
+        origin: 'right',
+        distance: '700px'
+    });
+
+    sr.reveal('#infoArica2',{
+        duration:  1500,
+        origin: 'bottom',
+        distance: '700px'
+    });
+
 /* ScrollReveal de la página Habitaciones*/
     sr.reveal('#main__titulo__Habitaciones',{
         duration:  1500,
