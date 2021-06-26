@@ -62,15 +62,6 @@ header {
       width: auto;
     }
 
-@media only screen and (min-width: 768px) {
-  .header__logo {
-    flex: 1; }
-  .header__navbar ul {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: right; } }
-
 #carruselArica {
   position: absolute;
   top: 0;
@@ -159,6 +150,13 @@ header {
       background-image: linear-gradient(#fb9b51, #f98126); }
       .videoInfo iframe {
         padding-right: 50px; }
+
+        @media only screen and (max-width: 600px) {
+          .videoInfo {
+            display: none;
+          }
+        }
+
     .textoCarrusel {
       /*Aquí va el texto que acompaña a la foto*/
       display: flex;
@@ -497,3 +495,40 @@ pude resolver*/
       color: white; }
     .main__rooms__infoHabit__modifier .main__rooms__cardMatrimonial .card-text {
       font-size: 16px; }
+
+      @media only screen and (max-width: 768px) {
+        header {
+          flex-direction: column;
+          align-items: center;
+          height: auto;
+        }
+  
+        header .header__navbar ul{
+          flex-direction: column;
+        }
+
+        .carruSel{
+          display: none;
+        }
+
+        .caractHostal strong{
+          display: none;
+        }
+
+        .caractHostal img{
+          display: none;
+        }
+
+        .videoInfo{
+          display: none;
+        }
+
+        #main__rooms__infoHabit{
+          display: none;
+        }
+
+        #main__rooms__infoHabit__modifier{
+          display: flex;
+          flex-wrap: wrap;
+        }
+      }

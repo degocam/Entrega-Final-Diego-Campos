@@ -1,5 +1,36 @@
 window.sr = ScrollReveal();
 
+/*Scroll Reveal del Index*/
+    sr.reveal('.carruSel',{
+        duration:  900,
+        origin: 'left',
+        distance: '500px'
+    });
+
+    sr.reveal('.main__infoHostal',{
+        duration:  1500,
+        origin: 'bottom',
+        distance: '700px'
+    });
+
+    sr.reveal('.main__Habit',{
+        duration:  1500,
+        origin: 'bottom',
+        distance: '700px'
+    });
+
+    sr.reveal('.videoInfo',{
+        duration:  1500,
+        origin: 'bottom',
+        distance: '700px'
+    });
+
+    sr.reveal('.mensajeSunny',{
+        duration:  1500,
+        origin: 'bottom',
+        distance: '700px'
+    });
+
 /*Scroll Reveal de la página Nosotros */
     sr.reveal('.header__navbar',{
         duration:  1500,
@@ -26,21 +57,27 @@ window.sr = ScrollReveal();
         distance: '-100px'
     });
 
-/*Scroll Reveall aplicado a la información de la página Acerca de Arica*/
-    sr.reveal('.main__acercaArica__modifier',{
+/* ScrollReveal de la página Habitaciones*/
+    sr.reveal('#main__titulo__Habitaciones',{
         duration:  1500,
-        origin: 'bottom',
-        distance: '-100px'
+        origin: 'left',
+        distance: '700px'
     });
 
-    sr.reveal('.main__acercaArica__info__modifier',{
+    sr.reveal('#main__rooms__infoHabit',{
+        duration:  1500,
+        origin: 'left',
+        distance: '700px'
+    });
+
+    sr.reveal('#main__subtitulo_Habitaciones',{
         duration:  1500,
         origin: 'right',
         distance: '700px'
     });
 
-    sr.reveal('#infoArica2',{
-        duration:  2700,
+    sr.reveal('.main__rooms__infoHabit__modifier',{
+        duration:  1500,
         origin: 'right',
         distance: '700px'
-    })
+    });
