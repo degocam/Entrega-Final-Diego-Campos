@@ -6,7 +6,6 @@
   list-style: none;
   text-decoration: none; }
 
-/*Estos son los colores del hostal, en variables para llamarse en forma rápida*/
 body {
   font-family: 'Montserrat', 'sans-serif';
   overflow-x: hidden; }
@@ -17,7 +16,8 @@ header {
   flex-direction: row;
   flex-wrap: nowrap;
   width: 100vw;
-  height: 8vh; }
+  height: 10vh; 
+  background-color: #11224f;}
   header .header__logo {
     position: relative;
     flex: 1;
@@ -57,6 +57,11 @@ header {
     color: black;
     background-color: white; }
 
+    header .header__logo img{
+      height: 4vh;
+      width: auto;
+    }
+
 @media only screen and (min-width: 768px) {
   .header__logo {
     flex: 1; }
@@ -72,6 +77,218 @@ header {
   width: 100vw;
   height: 5vh; }
 
+  .main__infoHostal {
+    /*Estos estilos ordenan cada servicio que va con una foto y una descripción*/
+      display: flex;
+      flex-direction: column;
+      background-image: url("../archivos/backpacker.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      align-content: space-between;
+      width: 100vw;
+      height: 100%;
+      padding: 5vh 0vw 10vh 0vh; }
+      .main__infoHostal h1 {
+        /*titulo de la seccion*/
+        color: white;
+        text-align: center;
+        padding: 50px; }
+      .main__infoHostal .caractHostal {
+        /*ordena el div que contiene la foto mas su descripcion*/
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: auto;
+        height: auto;
+        width: 100vw; }
+        .main__infoHostal .caractHostal div {
+          /*alinea la foto con su descripción */
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
+        .main__infoHostal .caractHostal img {
+          border-radius: 20px;
+          width: auto;
+          height: 150px; }
+        .main__infoHostal .caractHostal strong {
+          /*descripcion de cada servicio del hostal*/
+          color: white; }
+    .main__Habit, .aboutARI {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      padding: 5px; }
+      .main__Habit h2, .aboutARI h2 {
+        text-align: center; }
+    .main__Habit__modifier {
+      /*Seccion de habitaciones*/
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: center;
+      padding-right: 5vw;
+      padding-left: 5vw;
+      padding-top: 10vh;
+      padding-bottom: 10vh;
+      background-color: white; }
+      .main__Habit__modifier img {
+        width: 25vw;
+        height: auto;
+        border-radius: 40px;
+        padding-bottom: 15px; }
+      .main__Habit__modifier img:hover {
+        transform: scale(103%); }
+      .main__Habit__modifier h2 {
+        color: black; }
+      .main__Habit__modifier strong {
+        color: black;
+        font-size: 18px;
+        padding-top: 10em;
+        padding-bottom: 1em; }
+    .videoInfo {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-content: space-between;
+      width: 100vw;
+      height: auto;
+      padding: 50px 50px;
+      background-image: linear-gradient(#fb9b51, #f98126); }
+      .videoInfo iframe {
+        padding-right: 50px; }
+    .textoCarrusel {
+      /*Aquí va el texto que acompaña a la foto*/
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 45vw;
+      height: auto;
+      font-weight: 700;
+      font-size: 25px;
+      color: white; }
+      .textoCarrusel h3 {
+        padding: 15px; }
+    
+    #mensajeSunny {
+      /*Estilos del padre que contiene el formulario*/
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100vw;
+      background-image: linear-gradient(#1a3b71, #11224f); }
+    
+    .formContact {
+      /*ordena los input de arriba hacia abajo y separa el formulario de la invitación a enviar un 
+        msje*/
+      display: flex;
+      flex-direction: column;
+      width: 50vw;
+      height: auto;
+      padding: 20px;
+      color: white;
+      font-family: 'Montserrat', sans-serif; }
+    
+    /*Para este caso, no ocupé la anidación SASS por que descomponía el diseño que quería*/
+    .insertarText {
+      display: flex;
+      flex-direction: column; }
+    
+    .insertarText, select {
+      /*le da forma al selector del país*/
+      display: flex;
+      flex-direction: column;
+      width: 40vw;
+      padding: 12px 20px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      color: black;
+      font-family: 'Montserrat', sans-serif; }
+    
+    input[type=submit] {
+      /*le da estilo al boton enviar*/
+      width: 20vw;
+      background-color: #ff831a;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer; }
+    
+    input[type=submit]:hover {
+      background-color: #fb9b51;
+      color: #001d4e; }
+    
+    input[type=reset] {
+      /*le da estilo al boton reset*/
+      width: 20vw;
+      background-color: #ff831a;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer; }
+    
+    input[type=reset]:hover {
+      /*le da estilo al botón cuando el cursor pasa por encima*/
+      background-color: #fb9b51;
+      color: #001d4e; }
+    
+    #mensajeInvit {
+      /*ordena la invitación a enviar un msje*/
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: space-evenly;
+      width: 50vw;
+      height: auto; }
+      #mensajeInvit img {
+        width: 25vw;
+        height: auto;
+        border-radius: 20px; }
+      #mensajeInvit p {
+        color: #F98126;
+        font-size: 25px;
+        font-weight: 700; }
+    
+    #footer__general {
+      /*da estilo al footer*/
+      display: flex;
+      flex-direction: column;
+      align-items: space-around;
+      justify-content: space-evenly;
+      background-image: linear-gradient(#3f3f3f, #030303);
+      font-family: 'Montserrat', sans-serif;
+      width: 100vw;
+      height: auto;
+      padding: 50px 50px; }
+      #footer__general ul {
+        display: flex;
+        flex-direction: column;
+        align-items: space-between;
+        text-decoration: none;
+        list-style: none; }
+      #footer__general li {
+        font-size: 16px;
+        font-weight: 200;
+        padding-top: 10px; }
+      #footer__general a {
+        color: white;
+        text-decoration: none; }
+      #footer__general a:hover {
+        color: #fb9b51;
+        text-decoration: none; }
+      #footer__general p {
+        font-size: 11px;
+        color: #fff;
+        padding-top: 100px; }
+
 /*Esta sección le da estilo a la página Nosotros*/
 .main__nosotros__body {
   background-image: linear-gradient(#11224f, #1A3B71);
@@ -86,7 +303,10 @@ header {
   column-gap: 30px;
   row-gap: 10px;
   justify-self: center;
-  grid-template-areas: "tituloNosotros tituloNosotros tituloNosotros" "subtituloNosotros subtituloNosotros subtituloNosotros" "img1 img2 textoNosotros" "img3 img4 textoNosotros"; }
+  grid-template-areas: "tituloNosotros tituloNosotros tituloNosotros"
+ "subtituloNosotros subtituloNosotros subtituloNosotros"
+ "img1 img2 textoNosotros"
+ "img3 img4 textoNosotros"; }
   #main__nosotros .tituloSunny {
     grid-area: tituloNosotros; }
   #main__nosotros .subtituloSunny {
@@ -213,3 +433,67 @@ header {
 
 /*A partir de los estilos de Habitaciones se codea directamente en el CSS, por causa de un error que no
 pude resolver*/
+
+/*Estilos página habitaciones*/
+#main__titulo__Habitaciones {
+  font-size: 30px;
+  padding: 30px; }
+
+#main__rooms__infoHabit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: 5vw; }
+
+.main__rooms__caracts {
+  border-style: solid;
+  width: auto;
+  height: auto;
+  /*Le da forma a los contenedores con los servicios*/
+  border-radius: 10px;
+  border-color: #030303;
+  border-width: 1px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  font-weight: 400;
+  padding: 15px 15px 0.1px 15px; }
+
+#main__subtitulo_Habitaciones {
+  font-size: 30px;
+  padding: 45px; }
+
+.main__rooms__infoHabit__modifier {
+  border-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: space-between;
+  width: 100vw;
+  height: auto;
+  padding-bottom: 20px; }
+  .main__rooms__infoHabit__modifier .main__rooms__cardMatrimonial {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 40vw;
+    height: auto;
+    padding: 20px;
+    margin: 10px;
+    background-image: linear-gradient(#fb9b51, #f98126);
+    border-radius: 20px;
+    color: white; }
+    .main__rooms__infoHabit__modifier .main__rooms__cardMatrimonial img {
+      height: 200px;
+      width: 200px;
+      border-radius: 20px;
+      padding: 10px; }
+    .main__rooms__infoHabit__modifier .main__rooms__cardMatrimonial .card-title {
+      text-align: left;
+      font-size: 20px;
+      font-weight: 700px;
+      color: white; }
+    .main__rooms__infoHabit__modifier .main__rooms__cardMatrimonial .card-text {
+      font-size: 16px; }

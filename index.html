@@ -14,15 +14,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <!-- Hoja de estilo de SASS -->
     <link rel="stylesheet" href="css/main.css">
+    <!--Link al script para el efecto ScrollReveal-->
+    <script src="js/scrollreveal.js"></script>
     <!-- Link a las tipografías de Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com"><!--Link Google Fonts Montserrat-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap" rel="stylesheet"> 
     <title>Hostal Sunny Days</title>
 </head>
 <body>
-    <header>
+    <header class="header__navbar">
         <div class="header__logo"><!--Aquí va el logo para el lado izq de la pantalla-->
-            <p>Hostal Sunny <span style=font-weight:bold>Days Arica</span></p>
+            <a href="index.html"><img src="archivos/logo-sunny-days.svg" alt="Un atardecer en la playa: Hostal Sunny Days Arica"></a>
         </div>
         <nav class="header__navbar" class="navbar">
             <ul>
@@ -33,84 +35,141 @@
             </ul>
         </nav>
     </header>
-    <div id="carruselArica" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="archivos/carou1.jpg" class="d-block w-100" alt="Kite Surf en Arica">
-        </div>
-        <div class="carousel-item">
-          <img src="archivos/carou2.jpg" class="d-block w-100" alt="Plata Chinchorro Arica">
-        </div>
-        <div class="carousel-item">
-          <img src="archivos/carou3.jpg" class="d-block w-100" alt="Kite surfing en playa Chinchorro">
-        </div>
-      </div>
+    <div class="carruSel">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="archivos/slider2.svg" class="d-block w-100 h-40">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="archivos/slider1.svg" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="archivos/slider3.svg" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="archivos/slider4.svg" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="archivos/slider5.svg" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="archivos/slider6.svg" class="d-block w-100">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </div>
     <section class="main__infoHostal">
-      <div>
-      <h1>Esperamos hacer de tu estadía lo más segura y comfortable posible</h1></div>
-      <div class="caractHostal">
-          <div>
-          <img src="archivos/locker.jpg">
-          <strong>Bodega para guardar equipaje</strong>
-          </div>
-          <div>
-          <img src="archivos/wi-fi.jpg">
-          <strong>Wi-Fi Gratuito</strong>
-          </div>
-          <div>
-          <img src="archivos/parking.jpg">
-          <strong>Estacionamiento</strong>
-          </div>
-          <div>
-          <img src="archivos/kitchen.jpg">
-          <strong>Cocina y espacios comunes</strong>
-          </div>
-          <div>
-          <img src="archivos/laundry.jpg">
-          <strong>Servicio de lavandería</strong>
-          </div>
-          <div>
-          <img src="archivos/tourist-info.jpg">
-          <strong>Información turística</strong>
-          </div>
-      </div>
-</section>
-<section class="main__Habit">
-  <h2>Elige la habitación que más te acomode</h2>
-  <div class="main__Habit__modifier">
-      <div>
-          <a href="habitaciones.html><img src="archivos/habit-1.jpg"></a>
-          <strong>Habitaciones con baño privado</strong>
-      </div>
-      <div>
-          <a href="habitaciones.html><img src="archivos/habit-2.jpg"></a>
-          <strong>Habitaciones con baño compartido</strong>
-      </div>
-      <div>
-          <a href="habitaciones.html><img src="archivos/habit-3.jpg"></a>
-          <strong>Cama en dormitorio</strong>
-      </div>
-  </div>
-  <div class="videoInfo">
-    <div><iframe src="https://www.youtube.com/embed/_0uJWRChTMI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-    <div class="textoCarrusel">
-        <h3> Más de 20 años brindando hospedaje a backpackers de todo el mundo</h3>
-    </div> 
-</div>
-</section>
+            <div>
+            <h1>Esperamos hacer de tu estadía lo más segura y comfortable posible</h1></div>
+            <div class="caractHostal">
+                <div>
+                <img src="archivos/luggage.svg">
+                <strong>Bodega para guardar equipaje</strong>
+                </div>
+                <div>
+                <img src="archivos/wifi-sign.svg">
+                <strong>Wi-Fi Gratuito</strong>
+                </div>
+                <div>
+                <img src="archivos/parked-car.svg">
+                <strong>Estacionamiento</strong>
+                </div>
+                <div>
+                <img src="archivos/kitchen1.svg">
+                <strong>Cocina y espacios comunes</strong>
+                </div>
+                <div>
+                <img src="archivos/laundry1.svg">
+                <strong>Servicio de lavandería</strong>
+                </div>
+                <div>
+                <img src="archivos/tourism-info.svg">
+                <strong>Información turística</strong>
+                </div>
+            </div>
+    </section>
+    <section class="main__Habit">
+        <h2>Elige la habitación que más te acomode</h2>
+        <div class="main__Habit__modifier">
+            <div>
+                <a href="habitaciones.html#roomType"><img src="archivos/cbp-3.jpg"></a>
+                <strong>Habitaciones con baño privado</strong>
+            </div>
+            <div>
+                <a href="habitaciones.html#roomType2"><img src="archivos/comp-1.jpg"></a>
+                <strong>Habitaciones con baño compartido</strong>
+            </div>
+            <div>
+                <a href="habitaciones.html#roomType3"><img src="archivos/dorm-1.jpg"></a>
+                <strong>Cama en dormitorio</strong>
+            </div>
+        </div>
+    </section>
+    <div class="videoInfo">
+        <div><iframe width="560" height="315" src="https://www.youtube.com/embed/_0uJWRChTMI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="textoCarrusel">
+            <h3> Más de 20 años brindando hospedaje a backpackers de todo el mundo</h3>
+        </div> 
+    </div>
+    <div id="mensajeSunny">
+        <div class="formContact">
+            <form action="/action_page.php">
+                <label for="nombrePila">Nombre</label>
+                <input type="text" class="insertarText" name="nombreConsulta" placeholder="Tu Nombre">       
+                <label for="apellido">Apellido</label>
+                <input type="text" class="insertarText" name="apellidoConsulta" placeholder="Tu Apellido">         
+                <label for="pais">País</label>
+                <select class="insertarText" name="paisDeConsulta">
+                <option value="argentina" selected>Argentina</option>
+                <option value="chile">Chile</option>
+                <option value="colombia">Colombia</option>
+                <option value="estates">EE.UU</option>
+                <option value="alemania">Alemania</option>
+                </select>
+                <label for="inputForm">Envíanos tu consulta</label>
+                <textarea class="insertarText" type="text" placeholder="Escribe tu mensaje"></textarea>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            <!-- <input class="inputForm" type="submit" value="Enviar">
+            <input class="inputForm" type="reset" value="Borrar"> -->
+                </form>
+        </div>
+        <div id="mensajeInvit">
+            <img src="archivos/backpacker-2.jpg">
+            <p>¿Están tus pasajes a Arica listos?</p>
+            <p>¡Envíanos un mensaje para planificar tu estadía!</p>
+        </div>
+    </div>
     <footer id="footer__general">
         <div>
             <ul>
                 <li><a href="index.html"> Bienvenidos!</a></li>
                 <li><a href="habitaciones.html">Habitaciones</a></li>
-                <li><a href="nosotros.html"> El Hostal</a></li>
+                <li><a href="nosotros.html"> Nosotros</a></li>
                 <li><a href="acerca-arica.html"> Acerca de Arica</a></li>
-                <li><a href="experiencias.html"> Nuestros Huéspedes</a></li>
+                <li><a href="experiencias.html"> Experiencias</a></li>
             </ul>
             <p>All rights reserved Hostal Sunny Days© Arica</p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
